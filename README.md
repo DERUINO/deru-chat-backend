@@ -11,4 +11,4 @@ npm run start
 
 ### Ссылка на клиент приложения
 
-[Клиент](https://github.com/DERUINO/system-control-v2-client)
+[Клиент](https://github.com/DERUINO/deru-chat-frontend)
