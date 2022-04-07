@@ -26,7 +26,11 @@ io.on('connection', socket => {
     })
 
     socket.on('message', (data, cb) => {
-        socket.to(data.recieveId).emit('message:recieved', data);
+        socket.to(data.recieveId._id).emit('message:recieved', data);
+    })
+
+    socket.on('dialog', (data, cb) => {
+        socket.to(data.recieveId._id).emit('dialog:recieved', data);
     })
 
     socket.on('disconnect', () => {

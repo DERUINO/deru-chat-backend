@@ -17,7 +17,7 @@ class settingsController {
 
     async getUserInfo(req, res) {
         try {
-            const { id } = req.body;
+            const id = req.user.id;
 
             const user = await Account.findOne({ _id: id }).lean();
             res.json({ data: user, status: 200 });
